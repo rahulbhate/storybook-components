@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "bundle.js",
+    libraryTarget: "commonjs2",
   },
   devServer: {
     port: 3000,
