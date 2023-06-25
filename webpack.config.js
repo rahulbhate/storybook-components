@@ -2,10 +2,12 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
+  mode: "production",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "bundle.js",
-    libraryTarget: "commonjs2",
+    filename: "index.js",
+    libraryTarget: "umd",
+    library: "sb-react-components",
   },
   devServer: {
     port: 3000,
